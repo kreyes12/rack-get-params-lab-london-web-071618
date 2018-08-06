@@ -32,3 +32,4 @@ class Application
 end
 
   def req.path.match(/add/)
+    if @@items.include?
