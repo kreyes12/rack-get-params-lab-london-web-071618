@@ -29,7 +29,7 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
-end
+
 
   def req.path.match(/add/)
     additional_item = req.params["item"]
@@ -45,5 +45,6 @@ end
 
     resp.finish
   end
+end
 
       
