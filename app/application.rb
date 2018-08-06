@@ -35,5 +35,14 @@ end
     additional_item = req.params["item"]
     if @@items.include? additional_item
       @@cart << additional_item
-      
+          resp.write "added #{additional_item}"
+      else
+        resp.write "We don't have that item!"
+      end
+    else
+      resp.write "Path Not Found"
+    end
+
+    resp.finish
+  end
       
