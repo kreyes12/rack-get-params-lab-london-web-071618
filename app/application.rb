@@ -30,3 +30,5 @@ class Application
     end
   end
 end
+
+  def req.path.match(/cart/)
