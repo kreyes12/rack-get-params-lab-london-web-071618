@@ -31,4 +31,4 @@ class Application
   end
 end
 
-  def req.path.match(/cart/)
+  def req.path.match(/add/)
