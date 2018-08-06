@@ -32,5 +32,5 @@ class Application
 end
 
   def req.path.match(/add/)
-    additional_item = 
+    additional_item = req.params["item"]
     if @@items.include?
