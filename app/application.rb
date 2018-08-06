@@ -34,5 +34,6 @@ end
   def req.path.match(/add/)
     additional_item = req.params["item"]
     if @@items.include? additional_item
+      @@cart << additional_item
       
       
